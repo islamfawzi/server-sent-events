@@ -1,0 +1,16 @@
+<script>
+
+/*
+var sse1 = new EventSource('http://localhost:8080/sse');
+sse1.onmessage = function (evt) {
+    console.log(evt);
+};
+*/
+
+
+var sse2 = new EventSource('http://localhost:8080/notification/subscribe?clientId=123');
+sse2.onmessage = function (evt) {
+    console.log(evt);
+};
+
+</script>
